@@ -1,5 +1,6 @@
 package me.artur.daggertest;
 
+import javax.inject.Inject;
 import me.artur.mylibrary.Business;
 
 /**
@@ -7,6 +8,7 @@ import me.artur.mylibrary.Business;
  */
 public class Presenter {
 
+  @Inject
   public Presenter(Business business) {
   }
 }

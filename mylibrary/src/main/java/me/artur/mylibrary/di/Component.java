@@ -10,6 +10,6 @@ import me.artur.mylibrary.Business;
 @LibraryScope
 public interface Component {
 
-  SubComponent getSubcomponent(Business business);
+  SubComponent getSubcomponent(SubModule subModule);
 
 }

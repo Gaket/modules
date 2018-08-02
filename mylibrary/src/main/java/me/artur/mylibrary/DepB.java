@@ -6,7 +6,6 @@ import me.artur.mylibrary.di.SubScope;
 /**
  * @author Artur Badretdinov (Gaket) 31.07.2018
  */
-@SubScope
 public class DepB {
 
   @Inject

@@ -18,16 +18,18 @@ public class AppModule {
 
   @Provides
   @Singleton
-  LibraryInit business(DepA depa, DepB depb) {
-    return new Business(depa, depb);
-  };
+  Business business() {
+    return new Business();
+  }
 
   @Provides
+  @Singleton
   AndroidClass androidClass() {
     return new AndroidClass();
   }
 
   @Provides
+  @Singleton
   Presenter presenter(Business business) {
     return new Presenter(business);
   }
