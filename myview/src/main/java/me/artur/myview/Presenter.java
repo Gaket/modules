@@ -8,7 +8,7 @@ import me.artur.mylibrary.Bussiness;
  */
 public class Presenter {
 
-  private Bussiness bussiness;
+  public Bussiness bussiness;
 
   public Presenter(Bussiness bussiness) {
     this.bussiness = bussiness;

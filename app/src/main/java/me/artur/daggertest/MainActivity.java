@@ -3,9 +3,11 @@ package me.artur.daggertest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.Toast;
 import javax.inject.Inject;
 import me.artur.daggertest.di.DaggerAppComponent;
 import me.artur.mylibrary.DepB;
+import me.artur.mylibrary.Manager;
 import me.artur.myview.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
   @Inject
   DepB depB;
 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -22,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
     DaggerAppComponent.create().plusSubComponent().inject(this);
 
+    Manager manager = new Manager();
+    Boolean theSameBusiness = manager.bussiness.equals(view.presenter.bussiness);
+
+    Toast.makeText(this,  theSameBusiness.toString(), Toast.LENGTH_SHORT).show();
     Log.d("", view.toString());
   }
 }

@@ -7,7 +7,7 @@ import javax.inject.Inject;
  */
 public class View {
 
-  Presenter presenter;
+  public Presenter presenter;
 
   public View(Presenter presenter) {
     this.presenter = presenter;

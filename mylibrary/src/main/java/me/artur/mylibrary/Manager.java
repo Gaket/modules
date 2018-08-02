@@ -8,9 +8,11 @@ import javax.inject.Inject;
 public class Manager {
 
   @Inject
-  Bussiness bussiness;
+  public Bussiness bussiness;
 
   public Manager() {
     ComponentManager.subComponent.inject(this);
   }
+
+
 }
