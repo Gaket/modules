@@ -1,6 +1,7 @@
 package me.artur.daggertest.di;
 
 import dagger.Subcomponent;
+import javax.inject.Singleton;
 import me.artur.daggertest.MainActivity;
 import me.artur.mylibrary.di.SubModule;
 import me.artur.mylibrary.di.SubScope;
@@ -9,7 +10,7 @@ import me.artur.myview.di.ViewModule;
 /**
  * @author Artur Badretdinov (Gaket) 02.08.2018
  */
-@Subcomponent(modules ={ SubModule.class,  ViewModule.class})
+@Subcomponent(modules = {ViewModule.class})
 @SubScope
 public interface AppSubComponent {
 

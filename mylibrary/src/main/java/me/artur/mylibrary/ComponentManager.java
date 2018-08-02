@@ -2,7 +2,6 @@ package me.artur.mylibrary;
 
 import me.artur.mylibrary.di.Component;
 import me.artur.mylibrary.di.DaggerComponent;
-import me.artur.mylibrary.di.ExternalDeps;
 import me.artur.mylibrary.di.SubComponent;
 
 /**
@@ -14,7 +13,11 @@ public class ComponentManager {
   public static Component component = DaggerComponent.create();
   public static SubComponent subComponent;
 
-  public static void initSubcomponent(ExternalDeps externalDeps) {
-    subComponent = component.getSubcomponent(externalDeps);
+  public static void initSubcomponent(Business business) {
+    subComponent = component.getSubcomponent(business);
+  }
+
+  public static void initLibComponent(Business business) {
+    initSubcomponent(business);
   }
 }

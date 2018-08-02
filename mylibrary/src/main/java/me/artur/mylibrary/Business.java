@@ -7,11 +7,19 @@ import javax.inject.Inject;
  */
 public class Business {
 
+  @Inject
   DepA depA;
+  @Inject
   DepB depB;
 
-  public Business(DepA depA, DepB depB) {
-    this.depA = depA;
-    this.depB = depB;
+  public Business() {
+    ComponentManager.subComponent.inject(this);
+  }
+
+  /**
+   * TODO describe function
+   */
+  private void func1(){
+
   }
 }
