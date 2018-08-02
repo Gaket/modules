@@ -15,6 +15,5 @@ import me.artur.myview.di.ViewModule;
 @Singleton
 public interface AppComponent {
 
-
   AppSubComponent plusSubComponent();
 }

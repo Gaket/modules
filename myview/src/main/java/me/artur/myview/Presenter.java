@@ -1,16 +1,15 @@
 package me.artur.myview;
 
-import javax.inject.Inject;
-import me.artur.mylibrary.Bussiness;
+import me.artur.mylibrary.Business;
 
 /**
  * @author Artur Badretdinov (Gaket) 02.08.2018
  */
 public class Presenter {
 
-  public Bussiness bussiness;
+  public Business business;
 
-  public Presenter(Bussiness bussiness) {
-    this.bussiness = bussiness;
+  public Presenter(Business business) {
+    this.business = business;
   }
 }

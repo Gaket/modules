@@ -2,7 +2,7 @@ package me.artur.mylibrary.di;
 
 import dagger.Module;
 import dagger.Provides;
-import me.artur.mylibrary.Bussiness;
+import me.artur.mylibrary.Business;
 import me.artur.mylibrary.DepA;
 import me.artur.mylibrary.DepB;
 
@@ -14,7 +14,7 @@ public class SubModule {
 
   @Provides
   @SubScope
-  Bussiness getBussiness(DepA a, DepB b) {
-    return new Bussiness(a, b);
+  Business getBussiness(DepA a, DepB b) {
+    return new Business(a, b);
   }
 }

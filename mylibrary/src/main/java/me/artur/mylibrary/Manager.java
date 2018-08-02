@@ -8,7 +8,7 @@ import javax.inject.Inject;
 public class Manager {
 
   @Inject
-  public Bussiness bussiness;
+  public Business business;
 
   public Manager() {
     ComponentManager.subComponent.inject(this);

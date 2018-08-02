@@ -18,7 +18,7 @@ public class AppModule {
   }
 
   @Provides
-  Iterator getContext() {
+  Iterator getIterator() {
     return iterator;
   }
 

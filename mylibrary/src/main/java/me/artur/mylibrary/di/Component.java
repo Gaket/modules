@@ -7,5 +7,6 @@ package me.artur.mylibrary.di;
 @dagger.Component
 public interface Component {
 
-  SubComponent getSubcomponent();
+  SubComponent getSubcomponent(ExternalDeps externalDeps);
+
 }

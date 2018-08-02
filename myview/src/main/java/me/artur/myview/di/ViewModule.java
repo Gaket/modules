@@ -2,7 +2,7 @@ package me.artur.myview.di;
 
 import dagger.Module;
 import dagger.Provides;
-import me.artur.mylibrary.Bussiness;
+import me.artur.mylibrary.Business;
 import me.artur.myview.Presenter;
 import me.artur.myview.View;
 
@@ -13,8 +13,8 @@ import me.artur.myview.View;
 public class ViewModule {
 
   @Provides
-  Presenter presenter(Bussiness bussiness) {
-    return new Presenter(bussiness);
+  Presenter presenter(Business business) {
+    return new Presenter(business);
   }
 
   @Provides
