@@ -1,4 +1,4 @@
-package me.artur.mylibrary.di;
+package me.artur.mylibrary.archieve;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

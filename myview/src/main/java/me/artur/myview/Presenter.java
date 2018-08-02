@@ -1,7 +1,7 @@
 package me.artur.myview;
 
 import me.artur.mylibrary.Business;
-import me.artur.mylibrary.LibraryInit;
+import me.artur.mylibrary.MainBusinessLogic;
 
 /**
  * @author Artur Badretdinov (Gaket) 02.08.2018
@@ -9,7 +9,7 @@ import me.artur.mylibrary.LibraryInit;
 public class Presenter {
 
   public Business business;
-  public LibraryInit mybusiness;
+  public MainBusinessLogic mybusiness;
 
   public Presenter(Business business) {
     this.business = business;

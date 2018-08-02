@@ -1,4 +1,4 @@
-package me.artur.mylibrary.di;
+package me.artur.mylibrary.archieve;
 
 import dagger.Module;
 import dagger.Provides;
@@ -15,14 +15,10 @@ public class SubModule {
 
   private Business business;
 
-  public SubModule(Business business) {
+  public SubModule() {
     this.business = business;
   }
 
-  @Provides
-  public Business getBusiness() {
-    return business;
-  }
 
   @Provides
   DepB depB() {

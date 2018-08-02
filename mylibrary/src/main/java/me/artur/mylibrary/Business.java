@@ -13,13 +13,17 @@ public class Business {
   DepB depB;
 
   public Business() {
-    ComponentManager.subComponent.inject(this);
+    LibComponentManager.component.inject(this);
   }
 
   /**
    * TODO describe function
    */
   private void func1(){
+
+  }
+
+  public void doWork() {
 
   }
 }

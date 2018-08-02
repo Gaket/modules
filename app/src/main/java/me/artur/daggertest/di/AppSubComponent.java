@@ -1,10 +1,8 @@
 package me.artur.daggertest.di;
 
 import dagger.Subcomponent;
-import javax.inject.Singleton;
 import me.artur.daggertest.MainActivity;
-import me.artur.mylibrary.di.SubModule;
-import me.artur.mylibrary.di.SubScope;
+import me.artur.mylibrary.archieve.SubScope;
 import me.artur.myview.di.ViewModule;
 
 /**
